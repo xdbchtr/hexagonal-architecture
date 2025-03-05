@@ -14,7 +14,7 @@ import (
 
 func main() {
 	// Connect to MongoDB
-	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://admin:4dmin2024!@db-dev.wewearseia.com/?authSource=admin&replicaSet=rs0"))
+	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://admin:password@127.0.0.1/?authSource=admin&replicaSet=rs0"))
 	if err != nil {
 		log.Fatal(err)
 	}
